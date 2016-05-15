@@ -1,6 +1,10 @@
 * {
   text-decoration: none;
 }
+obfuscate {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
 html, body {
 	color: #fff;
 }
@@ -11,19 +15,13 @@ body a:hover {
   color: #43D8A8;
 }
 body {
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
-  align-items: center;
-	display: flex;
-  background: linear-gradient(80deg, #43D8A8, #5454a4);
+  background: linear-gradient(90deg, #43D8A8, #5454a4);
   background-size: 200%;
-  background-position: 100%;
-  animation: background-animation 10s ease infinite alternate;
+  background-position: 90%;
+  animation: background-animation 15s ease infinite alternate;
   -webkit-font-smoothing: antialiased;
-  line-height: 1.4;
+  line-height: 1;
 }
 @keyframes background-animation {
     0% {
@@ -39,34 +37,32 @@ body {
 .container2 {
       display: flex;
       flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: space-around;
+      /*flex-wrap: nowrap;*/
+      /*justify-content: space-around;*/
       align-content: center;
       align-items: center;
 }
-flex-body0 {
-              order: 0;
-              background-color: #f2f2f2;
-              box-shadow: 0 1px 30px 0 #d9d9d9;
-              line-height: 3em;
-            	padding: 0 4em 0 0;
-            	width: 100%;
-              position: fixed;
+.flex-body0 {
+      order: 0;
+      background-color: #f2f2f2;
+      box-shadow: 0 1px 30px 0 #d9d9d9;
+      line-height: 3em;
+      padding: 0 4em 0 0;
+      width: 100%;
+      position: fixed;
 }
-flex-body0 li {
-              float: right;
-              list-style: none;
-              padding-top: 0;
-              margin: 0 1.5em;
+.flex-body0 li {
+      float: right;
+      list-style: none;
+      padding-top: 0;
+      margin: 0 1.5em;
 }
-flex-body0 a {
-    color: grey;
+.flex-body0 a {
+      color: grey;
 }
 flex-body1 {
       order: 1;
-      flex: 1 0 auto;
-      align-self: center;
-      text-align: center;
+      /*flex: 1 0 auto;*/
       padding-top: 8em;
       overflow: hidden;
 }
@@ -76,30 +72,46 @@ flex-body1 img{
 }
 flex-body2 {
     order: 2;
-    flex: 1 0 auto;
-    align-self: center;
+    flex: auto;
     align-content: center;
     text-align: center;
     text-shadow: 2px 4px 0 rgba(0,0,0,0.15);
     font-size: 18;
 }
-lex-body25 {
-    order: 2;
-    align-self: center;
-    align-content: center;
-    text-align: center;
-    text-shadow: 2px 4px 0 rgba(0,0,0,0.15);
-}
-flex-body25 li {
-    float: right;
-    list-style: none;
-    margin: 0 4em 2em 1em;
-}
-flex-body25 a{
+flex-body2 a{
      color: white;
 }
-flex-body25 a:hover{
-     color: #e0555a;
+flex-body21 {
+justify-content: center;
+      order: 2;
+      flex: auto;
+      color: white;
+      padding: 5% 0 5% 0;
+}
+flex-body21 a {
+      align-content: center;
+      color: white;
+      padding: 2em 2em 2em 2em;
+      margin-bottom:
+}
+flex-body21 a:hover {
+      color: #e0555a;
+      text-shadow: 6px 8px 0 rgba(0,0,0,0.15);
+}
+flex-body25 {
+      order: 3;
+      flex: auto;
+      color: grey;
+      padding: 0 2%;
+      position: fixed;
+      line-height: 1em;
+      border-radius: 3%;
+      border: 2px solid #d9d9d9;
+      box-shadow: 0 1px 25px 0 #d9d9d9;
+      background-color: #f2f2f2;
+}
+flex-body25 a {
+    color: grey;
 }
 flex-body3 {
       order: 3;
@@ -115,24 +127,44 @@ flex-body3 h1{
 flex-body35 {
       order: 3;
       flex: auto;
-      align-self: center;
-      align-self: center;
-      justify-content: center;
       color: white;
-      padding: 4% 20%;
-      vertical-align: middle;
+      padding: 5% 20% 2% 20%;
+      line-height: 6em;
 }
 flex-body35 icon{
-      padding: 2em 1em 0 1em ;
-      vertical-align: middle
-      line-height: 5em;
+      padding: 2em 0 2em 1em ;
+}
+#icon {
+    color: #205081;
+    font-size: 5em;
+    text-shadow: 3px 4px 0 rgba(0,0,0,0.15);
+}
+#icon:hover {
+    color: #43D8A8;
+    text-shadow: 3px 4px 0 rgba(0,0,0,0.15);
+}
+flex-body36 {
+      order: 3;
+      padding-bottom: 3%
+}
+flex-body38 {
+      order: 3;
+      flex: auto;
+      align-self: center;
+      justify-content: center;
+      padding: 0 20% 2% 20%;
+      text-shadow: 2px 4px 0 rgba(0,0,0,0.15);
+}
+flex-body38 a, a:hover {
+  color: #0080ff;
 }
 flex-body4 {
       order: 4;
       flex: auto;
       background: #f2f2f2;
       box-shadow: 40em 0 0 0 rgb(0, 0, 0, 0.05);
-      min-height: 60px;
+      /*min-height: 60px;*/
+      line-height: 3em;
       color: grey;
       padding: 1%;
     	min-width: 100%;
